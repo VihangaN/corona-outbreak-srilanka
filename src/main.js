@@ -4,9 +4,13 @@ import vuetify from './plugins/vuetify';
 import VideoBg from 'vue-videobg';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import twitter from 'vue-twitter'
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
+Vue.use(twitter)
+
+
 Vue.component('video-bg', VideoBg)
 new Vue({
   vuetify,
