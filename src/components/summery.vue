@@ -4,8 +4,11 @@
          <br>
         <div class="container mx-auto">
               <div class="row" id="title-summery">
-        <div class="main_title text-center">
+        <div class="main_title text-center" id="">
            Current summery
+                <br>
+
+           <span id="la">Last update : {{ data.update_date_time }}</span>
         </div>
         
     
@@ -27,13 +30,13 @@
                                 නව ආසාදිතයන්
                             </span>
                             <span class="new-number">
-                                5
+                                {{ data.local_new_cases}}
                             </span>
                             <span class="all">
                                 මුලු ආසාදිතයන්
                             </span>
                              <span class="all-number">
-                                77
+                                {{data.local_total_cases}}
                             </span>
                         </div>
                            
@@ -51,13 +54,13 @@
                                 නව මරණ
                             </span>
                             <span class="new-number">
-                                0
+                               {{data.local_new_deaths}}
                             </span>
                             <span class="all">
                                 මුලු මරණ
                             </span>
                              <span class="all-number">
-                                0
+                               {{data.local_deaths}}
                             </span>
                         </div>
                            
@@ -74,7 +77,13 @@
                                සුවය ලැබූවන්
                             </span>
                             <span class="new-number">
-                                1
+                              {{data.local_recovered}}
+                            </span>
+                            <span class="all">
+                               දැනට රෝහල් ගත කර ඇති මුලු සංඛ්‍යාව
+                            </span>
+                             <span class="all-number">
+                               {{data.local_total_number_of_individuals_in_hospitals}}
                             </span>
                            
                         </div>
@@ -93,9 +102,27 @@ export default {
     data () {
     return {
       switch1: false,
+      data:null,
      
     }
   },
+
+  methods:{
+
+        getApires(){
+
+            this.axios.get("https://hpb.health.gov.lk/api/get-current-statistical").then((response) => {
+            // console.log(response.data);
+            this.data = response.data.data;
+            console.log(this.data);
+})
+        }
+   
+  },
+
+  mounted(){
+      this.getApires();
+  }
     
 }
 </script>
@@ -105,6 +132,7 @@ export default {
 *{
     margin:0;
     padding: 0;
+    color:#4E4D4D;
 }
 
 .number{
@@ -113,14 +141,14 @@ export default {
 }
 #summery{
     height:100vh;
-    background: #409bf0;
+    background: #FAFBFB;
     /* display: flex;
     justify-content: center; */
 }
 .main_title{
  text-align: center;
 font-size: 30px;
-color:#ffffff;
+color:#4E4D4D;
 width:100%;
 }
 
@@ -232,5 +260,8 @@ background-color: #2ed573;
     font-weight:600;
     font-size:30px;
   
+}
+#la{
+    font-size: 17px;
 }
 </style>
