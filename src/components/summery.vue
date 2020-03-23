@@ -4,7 +4,7 @@
     <div class="container mx-auto">
       <div class="row" id="title-summery">
         <div class="main_title text-center">
-          <h1 id="maintitle">COVID-19 නවතම තත්වය</h1>
+          <h1 id="maintitle" class="sinhalafontclass">COVID-19 නවතම තත්වය</h1>
           <div id="time">
             <span id="la"> Last update : {{ data.update_date_time }} </span>
             <!-- <br/> -->
@@ -25,9 +25,9 @@
             <div id="content">
               <!-- <img src="../assets/corona.svg" alt id="title" /> -->
               <br />
-              <span class="new">වාර්තාවු නව<br/>ආසාදිතයින් ගන්න</span>
+              <span class="new">වාර්තා වූ නව<br/>ආසාදිතයින් ගණන</span>
               <span class="new-number">{{ new_infections}}</span>
-              <span class="all">මුළු ආසාදිතයන් ගණන</span>
+              <span class="all">ආසාදිතයින් මුළු ගණන</span>
               <span class="all-number">{{total_infections}}</span>
             </div>
           </div>
@@ -38,7 +38,7 @@
             <div id="content">
               <!-- <img src="../assets/coroner.svg" alt id="title" /> -->
               <br />
-              <span class="new">නව වාර්තාවූ<br/>මිය ගිය ගණන </span>
+              <span class="new">නව වාර්තා වූ<br/>මිය ගිය ගණන </span>
               <span class="new-number">{{new_deaths}}</span>
               <span class="all">වාර්තාවූ මුළු<br/>මිය ගිය ගණන </span>
               <span class="all-number">{{total_deaths}}</span>
@@ -51,12 +51,12 @@
             <div id="content">
               <!-- <img src="../assets/recovered.svg" alt id="title" /> -->
               <br />
-              <span class="new">සම්පූරණ සුවය ලැබූ ගණන </span>
+              <span class="new">සම්පූර්ණ සුවය ලැබූ ගණන </span>
               <span class="new-number">{{total_recovered}}</span>
 
 
 
-              <span class="all">දැනට රෝහල් ගත කර ඇති මුලු ගණන</span>
+              <span class="all">දැනට රෝහල් ගත කර ඇති මුළු ගණන</span>
               <span class="all-number">{{total_admited}}</span>
             </div>
           </div>
@@ -223,6 +223,7 @@
     color: #fff;
     font-weight: 800;
     font-size: 30px;
+    font-family: 'Dusharnbi', arial;
   }
 
   .new-number {
@@ -241,6 +242,7 @@
     color: #fff;
     font-weight: 800;
     font-size: 30px;
+    font-family: 'Dusharnbi', arial;
   }
 
   #toggle {
@@ -267,4 +269,6 @@
   #time{
     background-color: ligcxchtblue;
   }
+
+
 </style>

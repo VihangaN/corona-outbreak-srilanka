@@ -5,6 +5,7 @@
                 COVID-19 Live Tracker Sri Lanka
 
             </div>
+
             <img id="logo" src="../assets/logo_openmic.png" alt="" class="center">
 
             <a href="#summery"><button id="view">View</button></a>

@@ -30,21 +30,18 @@
                         <h3 class="">Powered by Health Promotion Bureau & Department of Government Information - Sri Lanka <br/>OPENMIC 24x7 🇱🇰</h3>
                     </mdb-col>
                     <mdb-col sm="6">
-
-
                         <tr>
-
                             <td  class="list-unstyled"> Follow Us:</td>
                             <td width="10"></td>
                             <td  class="list-unstyled">  <a class="footerlink" href="https://twitter.com/OPENMIC24x7">@Twitter</a></td>
                            <td width="10"></td>
-                            <td  class="list-unstyled"> <a class="footerlink" href="https://www.facebook.com/OPENMICDigital">@FaceBook</a></td>
+                            <td  class="list-unstyled"> <a class="footerlink" href="https://www.facebook.com/OPENMICDigital">@Facebook</a></td>
                             <td width="10"></td>
                             <td class="list-unstyled"><a class="footerlink" href="https://www.instagram.com/openmiclk/">@Instagram</a></td>
                             <td width="10"></td>
-                            <td class="list-unstyled"><a class="footerlink" href="https://www.youtube.com/openmiclk">@youtube</a></td>
+                            <td class="list-unstyled"><a class="footerlink" href="https://www.youtube.com/openmiclk">@YouTube</a></td>
                             <td width="10"></td>
-                            <td class="list-unstyled"><a class="footerlink" href="https://www.linkedin.com/company/30989692/admin/analytics/visitors/">@linkedin</a></td>
+                            <td class="list-unstyled"><a class="footerlink" href="https://www.linkedin.com/company/30989692/admin/analytics/visitors/">@Linkedin</a></td>
                         </tr>
                     </mdb-col>
                 </mdb-row>
@@ -88,7 +85,7 @@ iframe{
 .footerlink{
     color: white;
     font-size: medium;
-    font-style: oblique;
+
 }
 .title{
     font-size: 100px;
