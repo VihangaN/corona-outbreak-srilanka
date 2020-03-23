@@ -22,16 +22,54 @@
                </div>
            </div>
 
-          
-        
+
+        <mdb-footer class="font-small footerhead pt-4 mt-4">
+            <mdb-container class="text-left">
+                <mdb-row>
+                    <mdb-col sm="6">
+                        <h3 class="">Powered by Health Promotion Bureau & Department of Government Information - Sri Lanka <br/>OPENMIC 24x7 🇱🇰</h3>
+                    </mdb-col>
+                    <mdb-col sm="6">
+
+
+                        <tr>
+
+                            <td  class="list-unstyled"> Follow Us:</td>
+                            <td width="10"></td>
+                            <td  class="list-unstyled">  <a class="footerlink" href="https://twitter.com/OPENMIC24x7">@Twitter</a></td>
+                           <td width="10"></td>
+                            <td  class="list-unstyled"> <a class="footerlink" href="https://www.facebook.com/OPENMICDigital">@FaceBook</a></td>
+                            <td width="10"></td>
+                            <td class="list-unstyled"><a class="footerlink" href="https://www.instagram.com/openmiclk/">@Instagram</a></td>
+                            <td width="10"></td>
+                            <td class="list-unstyled"><a class="footerlink" href="https://www.youtube.com/openmiclk">@youtube</a></td>
+                            <td width="10"></td>
+                            <td class="list-unstyled"><a class="footerlink" href="https://www.linkedin.com/company/30989692/admin/analytics/visitors/">@linkedin</a></td>
+                        </tr>
+                    </mdb-col>
+                </mdb-row>
+            </mdb-container>
+            <div class="footer-copyright footerlast text-center py-3">
+                <mdb-container fluid>
+                    <h3>OPENMIC Digital Media </h3>
+                </mdb-container>
+            </div>
+        </mdb-footer>
        
     </section>
 </template>
 
 <script>
-export default {
-    
-}
+    import { mdbFooter, mdbContainer, mdbRow, mdbCol } from 'mdbvue';
+    export default {
+        name: 'FooterPage',
+        components: {
+            mdbFooter,
+            mdbContainer,
+            mdbRow,
+            mdbCol
+        }
+    }
 </script>
 
 <style scoped>
@@ -47,5 +85,21 @@ iframe{
 #tweet{
     /* overflow-y:scroll; overflow-x:hidden; */
 }
-
+.footerlink{
+    color: white;
+    font-size: medium;
+    font-style: oblique;
+}
+.title{
+    font-size: 100px;
+    font-weight: bold;
+}
+    .footerlast{
+        background-color: #6451cf;
+        color: white;
+    }
+.footerhead{
+    background-color: #1d2331;
+    color: white;
+}
 </style>
