@@ -1,5 +1,5 @@
 <template>
-    <video-bg :sources="['https://videohost-cubsl.000webhostapp.com/cvexplain.mp4']" img="demo/assets/bg.jpg">
+    <video-bg :sources="['http://orpheus.digital/storage/random42_scientific_communication.mp4']" img="demo/assets/bg.jpg">
         <div id="hero">
             <div class="main_title">
                 COVID-19 Live Tracker Sri Lanka
@@ -52,8 +52,6 @@
         transform: translate(-50%, -50%);
         left: 50%;
         top: 30%;
-        height: 30%;
-        width: 20%;
         margin-left: auto;
         margin-right: auto;
     }

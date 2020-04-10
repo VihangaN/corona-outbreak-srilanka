@@ -13,6 +13,7 @@
     "mdbvue": "^6.5.1",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
+    "vue-lkmap": "^1.0.8",
     "vue-number-animation": "^1.0.5",
     "vue-tweet-embed": "^2.4.0",
     "vue-twitter": "^0.1.0",

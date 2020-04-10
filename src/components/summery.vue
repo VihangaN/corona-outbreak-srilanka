@@ -6,7 +6,7 @@
         <div class="main_title text-center">
           <h1 id="maintitle" class="sinhalafontclass">COVID-19 නවතම තත්වය</h1>
           <div id="time">
-            <span id="la"> Last update : {{ data.update_date_time }} </span>
+            <span id="la"> Last Update : {{ data.update_date_time }} </span>
             <!-- <br/> -->
             <!-- <h6 id="sa">Source by Health Promotion Bureau, Sri Lanka</h6> -->
           </div>
@@ -51,18 +51,19 @@
             <div id="content">
               <!-- <img src="../assets/recovered.svg" alt id="title" /> -->
               <br />
-              <span class="new">සම්පූර්ණ සුවය ලැබූ ගණන </span>
+              <span class="new">සම්පූර්ණ සුවය<br/>ලැබූ ගණන </span>
               <span class="new-number">{{total_recovered}}</span>
 
 
 
-              <span class="all">දැනට රෝහල් ගත කර ඇති මුළු ගණන</span>
+              <span class="all">රෝහල් ගත කර<br/>ඇති මුළු ගණන</span>
               <span class="all-number">{{total_admited}}</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </section>
 </template>
 
@@ -264,6 +265,8 @@
     margin-left: auto;
     margin-right: auto;
     background-color: lightblue;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
   }
 
   #time{

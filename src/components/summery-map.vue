@@ -1,14 +1,13 @@
 <template>
+<div>
     <section>
       
            <div class="container">
                <div class="row">
-                   <div class="col-12 col-md-6">
-<iframe src="https://www.google.com/maps/d/embed?mid=1UPMGC3gKiJTlSPusbfnW3XcECxyLv8f1">
-        </iframe>
-    
+                   <div class="col-12">
+
                    </div>
-                   <div class="col-12 col-md-6" id="tweet">
+                    <div class="col-12" id="tweet">
 
     <twitter style="height:100vh">
     <div slot="loading">loading .....</div>
@@ -22,27 +21,29 @@
                </div>
            </div>
 
+</section>
 
         <mdb-footer class="font-small footerhead pt-4 mt-4">
             <mdb-container class="text-left">
                 <mdb-row>
                     <mdb-col sm="6">
-                        <h3 class="">Powered by Health Promotion Bureau & Department of Government Information - Sri Lanka <br/>OPENMIC 24x7 🇱🇰</h3>
+                        <h3 class="pb">Powered by Health Promotion Bureau & Department of Government Information - Sri Lanka <br/>OPENMIC 24x7 🇱🇰</h3>
                     </mdb-col>
                     <mdb-col sm="6">
-                        <tr>
-                            <td  class="list-unstyled"> Follow Us:</td>
-                            <td width="10"></td>
-                            <td  class="list-unstyled">  <a class="footerlink" href="https://twitter.com/OPENMIC24x7">@Twitter</a></td>
-                           <td width="10"></td>
-                            <td  class="list-unstyled"> <a class="footerlink" href="https://www.facebook.com/OPENMICDigital">@Facebook</a></td>
-                            <td width="10"></td>
-                            <td class="list-unstyled"><a class="footerlink" href="https://www.instagram.com/openmiclk/">@Instagram</a></td>
-                            <td width="10"></td>
-                            <td class="list-unstyled"><a class="footerlink" href="https://www.youtube.com/openmiclk">@YouTube</a></td>
-                            <td width="10"></td>
-                            <td class="list-unstyled"><a class="footerlink" href="https://www.linkedin.com/company/30989692/admin/analytics/visitors/">@Linkedin</a></td>
-                        </tr>
+                        <ul>
+                            <li  class="list-unstyled" id="fu"> Follow Us:</li>
+                            <li width="10"></li>
+                            <br>
+                            <li  class="list-unstyled">  <a class="footerlink" href="https://twitter.com/OPENMIC24x7">@Twitter</a></li>
+                           <li width="10"></li>
+                            <li  class="list-unstyled"> <a class="footerlink" href="https://www.facebook.com/OPENMICDigital">@Facebook</a></li>
+                            <li width="10"></li>
+                            <li class="list-unstyled"><a class="footerlink" href="https://www.instagram.com/openmiclk/">@Instagram</a></li>
+                            <li width="10"></li>
+                            <li class="list-unstyled"><a class="footerlink" href="https://www.youtube.com/openmiclk">@YouTube</a></li>
+                            <li width="10"></li>
+                            <li class="list-unstyled"><a class="footerlink" href="https://www.linkedin.com/company/30989692/admin/analytics/visitors/">@Linkedin</a></li>
+                        </ul>
                     </mdb-col>
                 </mdb-row>
             </mdb-container>
@@ -53,7 +54,8 @@
             </div>
         </mdb-footer>
        
-    </section>
+  
+    </div>
 </template>
 
 <script>
@@ -87,6 +89,21 @@ iframe{
     font-size: medium;
 
 }
+
+ul li{
+    display: inline-block;
+    margin: 5px;
+}
+#fu{
+    text-align:center;
+    display:block;
+}
+
+.pb{
+    text-align:center;
+    font-size:18px;
+}
+
 .title{
     font-size: 100px;
     font-weight: bold;
