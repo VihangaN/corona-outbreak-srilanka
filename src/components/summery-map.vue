@@ -54,7 +54,7 @@
             </div>
         </mdb-footer>
        
-  
+
     </div>
 </template>
 
