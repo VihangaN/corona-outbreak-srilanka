@@ -273,5 +273,8 @@
     background-color: ligcxchtblue;
   }
 
+ @media screen and (max-width: 440px){
+      #la{font-size: 20px;}
+ }
 
 </style>

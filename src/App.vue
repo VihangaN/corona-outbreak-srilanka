@@ -3,11 +3,16 @@
     <v-container fluid ma-0 pa-0>
    <hero></hero>
    <summery></summery>
-
+<section>
    <summerymap></summerymap>
-
-        <br/>
-
+   </section>
+<section id="twitter">
+  
+ <twit id="tcontainer"></twit>
+ 
+  
+    
+</section>
     </v-container>
   </v-app>
 </template>
@@ -40,4 +45,22 @@ export default {
 *{
   scroll-behavior: smooth;
 }
+
+#twitter{
+  margin-top:1000px;
+  width:100%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%);
+  background: #292F33;
+
+}
+
+#tcontainer{
+  width:90%;
+    left:50%;
+  position: relative;
+  transform: translate(-50%);
+}
+
 </style>

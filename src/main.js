@@ -6,13 +6,14 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import twitter from 'vue-twitter'
 import lkmap from 'vue-lkmap'
-import mapbase from './components/slmap'
+import tweet from './components/twitter'
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 Vue.use(twitter)
 Vue.component("lkmap",lkmap);
-Vue.component("lkmapbase",mapbase);
+Vue.component("twit",tweet);
+
 
 
 Vue.component('video-bg', VideoBg)
